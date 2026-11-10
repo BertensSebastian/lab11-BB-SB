@@ -67,6 +67,6 @@ def logarithm(a ,b):
 
 def exponent(a ,b):
     return a**b
->>>>>>> 78d2029ba71b36198b35d72070e1ee85d82bae5a
+
 
 
