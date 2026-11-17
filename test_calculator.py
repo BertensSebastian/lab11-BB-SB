@@ -12,12 +12,16 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self):
+        self.assertEqual(mul(2,3),6)
+        self.assertEqual(mul(5, 3), 15)
+        self.assertEqual(mul(5, 5), 25)
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
-    # ##########################
+    def test_divide(self):
+        self.assertEqual(div(2,8),4)
+        self.assertEqual(div(3, 9), 3)
+        self.assertEqual(div(5, 40), 8)
+
 
     ######## Partner 2
     # def test_divide_by_zero(self): # 1 assertion
@@ -35,15 +39,14 @@ class TestCalculator(unittest.TestCase):
     # ##########################
     
     ######## Partner 1
-    # def test_log_invalid_argument(self): # 1 assertion
-    #     # call log function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     logarithm(0, 5)
-    #     fill in code
+    def test_log_invalid_argument(self):
+        with self.assertRaises(ValueError):
+            logarithm(5,-1)
+        with self.assertRaises(ValueError):
+            logarithm(-3,50)
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
 
+<<<<<<< HEAD
     # def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
@@ -52,6 +55,18 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
     ##########################
     pass
+=======
+    def test_hypotenuse(self):
+        self.assertEqual(hypotenuse(3,4), 5)
+        self.assertEqual(hypotenuse(6, 8), 10)
+        self.assertEqual(hypotenuse(33, 56), 65)
+
+    def test_sqrt(self):
+        with self.assertRaises(ValueError):
+            square_root(0)
+        self.assertEqual(square_root(9), 3)
+        self.assertEqual(square_root(36), 6)
+>>>>>>> b47e0814b8871b856faa04e90b75d5c6b9a5d84d
 
 # Do not touch this
 if __name__ == "__main__":
