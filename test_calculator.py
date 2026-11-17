@@ -5,7 +5,8 @@ class TestCalculator(unittest.TestCase):
     ######### Partner 2
     # def test_add(self): # 3 assertions
     #     fill in code
-
+    def test_add(self):
+            
     # def test_subtract(self): # 3 assertions
     #     fill in code
     # ##########################
@@ -50,6 +51,7 @@ class TestCalculator(unittest.TestCase):
     #     # Test basic function
     #     fill in code
     ##########################
+    pass
 
 # Do not touch this
 if __name__ == "__main__":
